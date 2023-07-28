@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Steveen Jimenez, Html, Css, bootstrap, JavaScrip">
+  <link rel="icon" href="assets/logo_eam.png" sizes="15x15" type="img/gif" >
+  <!-- estilos css -->
+  <link rel="stylesheet" id="modoDia" href="styles/modoNoche.css" type="text/css" >
+  <link rel="stylesheet" href="styles/estilos.css">
+  <title>Portafolio Steveen Jimenez</title>
+  <!--libreria bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-   
+  HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500&display=swap');
+  </style>
+</head>
+
+<body>
+
+  <header class="header-home">
+    <nav class="flotante">
+      <div class="theme">
+        <img src="assets/soleado.png" alt="Ligth" class="dia" id="mdia" onclick="getId(this)" height="40px"width="40px">
+        <img src="assets/noche.png" alt="Dark" class="noche" id="mnoche" onclick="getId(this)" height="40px"width="40px">
+      </div>
+      <ul class="ul-menu">
+        <li><a href="#perfil">PERFIL</a></li>
+        <li><a href="#secEducacion">EDUCACIÓN</a></li>
+        <li><a href="#habilidades">HABILIDADES</a></li>
+        <li><a href="#contacto">CONTACTAME</a></li>
+      </ul>
+    </nav> 
+  </header>
+
+  <main class="main-home">
+    <h1 class="nombre">Brahiam Steveen Jimenez Zuluaga</h1>
+  <section class="allInfo">
+    <section class="perfil">
+      
+      <div class="foto">
+        <img src="assets/foto.jpg" alt="foto de perfil" width="70%" height="50%" class="radio">
+      </div>
+        
+      <div class="info">
+        <p class="sobreMi"> Ingeniero Mecatrónico altamente motivado y con amplia experiencia en el diseño, desarrollo y puesta en marcha de soluciones tecnológicas innovadoras. Mi enfoque interdisciplinario me ha permitido abordar proyectos complejos que integran mecánica, electrónica y control, con un claro enfoque en la eficiencia y la optimización de procesos. Poseo habilidades técnicas sobresalientes, una mente analítica y la capacidad de resolver problemas de manera creativa.
+        </p>
+      </div>
+    </section>
+  
+    <section class="educacion" id="secEducacion">
+        <div class="estudios" >
+          <h2 class="tituloEducacion">MIS ESTUDIOS</h2>
+          <ul>
+            <li class="titulosEd"><strong>Ingeniero Mecatrónico</strong> <br>Institución universitaria EAM  
+              2022  <br>Armenia, Quindío</li>
+
+            <li class="titulosEd"><strong>Tecnólogo en Automatización industrial</strong> <br>Institución universitaria EAM                 
+              2021<br>Armenia, Quindío</li>
+
+            <li class="titulosEd"><strong>Técnico En mantenimiento de sist. Mecatrónicos</strong> <br>Institución universitaria           
+              EAM 2020 <br>Armenia, Quindío </li>
+          </ul>
+        </div>
+
+        <div class="experiencia">
+          <h2 class="tituloExperiencia">MI EXPERIENCIA</h2>
+          <ul class="experiencias">
+            <li class="titulosExp"><strong>Electrónico Industrias Printex (Febrero 2022 - Mayo 2023)</strong> 
+              <br>Desempeño orientado al mantenimiento preventivo y correctivo de maquinaria en la industria textil, con 
+              experiencia en diagnóstico y reparación de tarjetas electrónicas, de control y potencia.
+            </li>
+            <li class="titulosExp"><strong>Mecatrónico en Facilisimo (Marzo 2021 - Septiembre 2021)</strong> 
+              <br>Encargado de la investigación de tecnologías para el desarrollo de proyectos asignados, destacando en la 
+               creación, integración e implementación tanto de software como de hardware.
+            </li>
+          </ul>
+        </div>
+    </section>
+
+    <section class="contHabilidades" id="habilidades">
+      <div class="tituloHabilidades">
+        <h2 >MIS HABILIDADES</h2>
+      </div>
+      <section class="habilidades">
+        <div class="imgHabilidades">
+          <img src="assets/c-.png" alt="" width="125px" height="125px" >
+          <h3>Lenguaje C</h3>
+        </div>
+        <div class="imgHabilidades">
+          <img src="assets/dwg.png" alt="" width="125px" height="125px" >
+          <h3>INVENTOR/CAD</h3>
+        </div>
+        <div class="imgHabilidades">
+          <img src="assets/formato-de-archivo-css.png" alt="" width="125px" height="125px" >
+          <h3>CSS</h3>
+        </div>
+        <div class="imgHabilidades">
+          <img src="assets/html.png" alt="" width="125px" height="125px" >
+          <h3>HTML</h3>
+        </div>
+        <div class="imgHabilidades">
+          <img src="assets/js.png" alt="" width="125px" height="125px" >
+          <h3>JAVASCRIPT</h3>
+        </div>
+        <div class="imgHabilidades">
+          <img src="assets/piton.png" alt="" width="125px" height="125px" >
+          <h3>PYTHON</h3>
+        </div>
+      </section>
+    </section>
+
+    <section class="formulario" id="contacto">
+      <div >
+          <h2 class="correo">ENVIAME UN CORREO</h2>
+      </div>
+      <form method="post" name="Formulariodecontacto" class="form">
+          <div class="row">
+              <div class="col">
+                  <label class="titulos " for="nombre">Nombre y Apellidos</label>
+                  <input class="input" id="nombre" type="text" name="nombre" 
+                  placeholder="Nombre y Apellidos" >
+              </div>
+              <div class="col">
+                  <label class="titulos" for="email">Email</label>
+                  <input class="input" id="email" type="email" name="email" 
+                  placeholder="Email">
+              </div>
+          </div>
+  
+          <label class="titulos" for="servicio">¿Qué servicio necesitas? </label>
+          <textarea class="textarea" name="servicio" id="servicio" type="text" cols="30" rows="2" maxlength="244">     
+          </textarea>
+
+          <div>
+              <input class="btnEnviar" type="submit" name="submit" value="Enviar"    
+             > <!-- onclick="Email.send()" -->
+          </div>
+      </form>
+    </section>
+  </section>  
+  </main>
+
+  <footer class="footer-home">
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" > 
+      <strong>Encuentrame en redes sociales</strong></button>
+
+  <div class="offcanvas offcanvas-top colorOff" tabindex="-1" id="offcanvasTop" >
+    <div class="offcanvas-header">
+      <h5 class="offTitle" id="offcanvasTopLabel"><strong>Mis Redes Sociales</strong></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="contImg">
+      <a href="https://www.linkedin.com/in/steveen-jimenez-719235255/" target="_blank">
+      <img src="assets/linkedin.png" alt="Linkedin" width="50px" height="50px" class="red"> Linkedin</a>
+      <a href="https://github.com/Stivenjimenez08" target="_blank">
+      <img src="assets/github.png" alt="Github" width="50px" height="50px" class="red"> Github</a>
+      <a href="https://wa.link/ysxva0" target="_blank">
+      <img src="assets/whatsapp.png" alt="Whatsapp" width="50px" height="50px" class="red"> Whatsapp</a>
+      <a href="https://www.instagram.com/steveenjz/" target="_blank">
+      <img src="assets/instagram.png" alt="Instagram" width="50px" height="50px" class="red"> instagram</a>
+      <a href="https://www.facebook.com/brahiamsteveen.jimenezzuluaga" target="_blank">
+      <img src="assets/facebook.png" alt="Facebook" width="50px" height="50px" class="red"> Facebook</a>
+    </div>
+  </div>
+    <h4>Portafolio realizado en 2023</h4>
+  </footer>
+</body>
+<script src="app.js"></script>
+</html>

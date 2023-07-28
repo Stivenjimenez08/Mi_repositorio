@@ -1,0 +1,136 @@
+:root{
+    --primero: #D9F2E3;
+    --segundo: #0D0D0D;
+    --tercero: rgb(98, 32, 97);
+    --bordes: rgba(255, 255, 255, 0.66);
+}
+
+/* Estilos pestaña perfil */
+.nombre{
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.perfil{
+    margin-top: 15px;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    & .info{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     & .sobreMi{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        font-size:25px;
+        font-weight: 800;
+        text-align: justify;
+        padding-right: 20px;
+       font-family: 'Edu SA Beginner', cursive;
+    }
+ }
+ .foto{
+    display: flex;
+    justify-content: center;
+    width: 45%; 
+}
+
+ /* Estilos pestaña educación  */   
+ .educacion{
+    margin: 30px 0px 30px 0px;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+
+    & .estudios{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: 'Edu SA Beginner', cursive;
+    }
+    & .experiencia{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: 'Edu SA Beginner', cursive;
+    }
+    & .tituloEducacion{
+        font-family: 'Edu SA Beginner', cursive;
+        margin: 50px;
+        letter-spacing: 2px;
+     }
+     & .tituloExperiencia{
+        font-family: 'Edu SA Beginner', cursive;
+        letter-spacing: 2px;
+     }
+    & .titulosEd{
+        margin-bottom: 50px;
+        list-style:circle ;
+     }
+    & .titulosExp{
+        margin: 55px;
+        list-style:circle ;
+        text-align: justify;
+     }
+ }
+
+/* Estilos pestaña habilidades */
+.contHabilidades{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .tituloHabilidades{
+        font-family: 'Edu SA Beginner', cursive;
+        text-align: center; 
+        letter-spacing: 2px;
+        margin: 10px 0px 20px 0px;
+    }
+}
+.habilidades{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    
+    & .imgHabilidades{
+        
+        margin: 0px 50px 40px 50px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    & .imgHabilidades>h3{
+        padding-top: 10px;
+        text-align: center;
+        font-family: 'Edu SA Beginner', cursive;
+        font-size: 20px;
+    }
+}
+
+/* Estilos iconos redes sociales */
+.contImg{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
