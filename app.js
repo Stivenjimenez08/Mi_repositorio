@@ -9,16 +9,16 @@ function getId(img){
     let modo= img.getAttribute('id')
     if(modo=="mdia" && estado== false){
         cambioEstilo.setAttribute('href','styles/modoDia.css')
-        activoNoche.style.display= "block"
-        activoDia.style.display= "none"
+        activoNoche.style.display = "block"
+        activoDia.style.display = "none"
     }else if(modo=="mnoche" && estado==false){
         cambioEstilo.setAttribute('href','styles/modoNoche.css')
         activoNoche.style.display= "none"
         activoDia.style.display= "block"}
 }
 //funcion para aviso de formulario enviado
-window.addEventListener("load", function(){
+    window.addEventListener("load", function(){
     document.getElementById("btnform").addEventListener("click", function(){
-        alert("Datos de formulario enviados");
+    alert("Datos de formulario enviados");
     })
 })
