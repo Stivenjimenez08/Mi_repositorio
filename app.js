@@ -1,4 +1,4 @@
-
+// variables para funcion de cambiar modo (dia/noche)
 let activoNoche= document.querySelector(".noche")
 let activoDia=   document.querySelector(".dia")
 let cambioEstilo= document.querySelector("link#modoDia")
@@ -7,7 +7,6 @@ let estado= false
 
 function getId(img){
     let modo= img.getAttribute('id')
-    // console.log(modo)
     if(modo=="mdia" && estado== false){
         cambioEstilo.setAttribute('href','styles/modoDia.css')
         activoNoche.style.display= "block"
@@ -17,3 +16,9 @@ function getId(img){
         activoNoche.style.display= "none"
         activoDia.style.display= "block"}
 }
+//funcion para aviso de formulario enviado
+window.addEventListener("load", function(){
+    document.getElementById("btnform").addEventListener("click", function(){
+        alert("Datos de formulario enviados");
+    })
+})
