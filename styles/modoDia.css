@@ -16,10 +16,12 @@
 body
 {
     width: 100%;
-    background: radial-gradient(circle, rgba(198,155,155,1) 0%, rgba(212,170,170,1) 51%, rgba(207,183,183,1) 100%);
+}
+.header-home, .footer-home, .main-home{
+background-color: wheat;
 }
 .header-home{
-    width: 99%;
+    width: 100%;
     height: 15%;
     display: flex;
     justify-content: center;
@@ -36,7 +38,7 @@ body
     align-items: center;
     color: var(--segundo);
     letter-spacing: 2px;
-    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 .allInfo{
     width: 90vw;
@@ -62,7 +64,7 @@ nav{
     &.flotante{
         border: 2px solid black;
         border-radius: 20px;
-        background-color: rgb(206, 154, 154);
+        background-color: rgb(232, 198, 136);
     }
 }
 nav>.ul-menu{
@@ -71,19 +73,24 @@ nav>.ul-menu{
     display: flex;
     justify-content: space-around;
     font-size: large;
-    font-weight: 600;
-    & li> a{
-        font-family: 'Edu SA Beginner', cursive;
+    
+     & .navbutton{
+        background-color: rgba(255, 255, 255, 0);
+        border: 0rem;
+    }
+    & .navbutton> a{
+        font-family: 'Times New Roman', Times, serif;
         text-decoration: none;
         color: var(--segundo);
         letter-spacing: 2px;
+        padding: 0.5rem;
+        font-weight: 600;
     }
 }
-nav>.ul-menu>li>a:hover, nav>.ul-menu>li>a:focus{
-    background-color: var(--segundo);
-    color: var(--cuarto);
+nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
+    background-color: rgb(60, 52, 52);
+    color: white;
     border-radius: 8px;
-    padding: 7px;
     transition: 1s;
 }
 
@@ -104,7 +111,7 @@ nav>.ul-menu>li>a:hover, nav>.ul-menu>li>a:focus{
 
 /* estilos del formulario */
 .correo{
-    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 .formulario{
     margin-top: 30px;
@@ -144,14 +151,14 @@ nav>.ul-menu>li>a:hover, nav>.ul-menu>li>a:focus{
     border: 2px solid black;
     border-radius: 15px;
     margin: 10px 0px 35px 0px;
-    background-color: rgb(229, 217, 217);
+    background-color: white;
 }
 .titulos{
     margin: 10px;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 2px;
-    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 .input{
     width: 90%;
@@ -159,7 +166,7 @@ nav>.ul-menu>li>a:hover, nav>.ul-menu>li>a:focus{
     border: 2px solid black;
     border-radius: 15px;
     text-align: center;
-    background-color: rgb(229, 217, 217);
+    background-color:white;
 }
 .input::placeholder{
     color: rgb(119, 117, 117);
@@ -169,13 +176,13 @@ nav>.ul-menu>li>a:hover, nav>.ul-menu>li>a:focus{
     width: 400px;
     height:45px;
     color: rgb(5, 5, 5);
-    background-color: rgb(225, 199, 199);
+    background-color:rgb(236, 229, 167);
     border: 2px solid black;
     border-radius:10px;
     font-size: large;
     font-weight: 600;
     letter-spacing: 2px;
-    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 .btnEnviar:hover{
     scale: 1.05;
@@ -202,8 +209,9 @@ nav>.ul-menu>li>a:hover, nav>.ul-menu>li>a:focus{
     border: 2px solid black!important;
     color: #0D0D0D !important;
     font-weight: 900;
-    background-color:rgb(225, 199, 199)!important;
+    background-color:rgb(236, 229, 167)!important;
 }
 .btn:hover{
-    scale: 1.1;
+    scale: 1.2;
+    transition: 1s;
 }
