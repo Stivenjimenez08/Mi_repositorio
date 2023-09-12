@@ -5,16 +5,16 @@
     --bordes: rgba(255, 255, 255, 0.66);
 }
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
 }
 .perfil, .educacion, .contHabilidades, .formulario{
-    border-bottom: 2px solid var(--primero);
+    border-bottom: 0.3rem solid var(--primero);
     width: 100%;
 }
 body
 {
-    width: 100%;
+    width: 100vw;
     background: radial-gradient(circle, rgba(123,34,121,1) 0%, rgba(25,25,55,1) 100%);
 }
 .header-home{
@@ -25,7 +25,7 @@ body
     align-items:center;
 }
 .main-home{
-    width: 99vw;
+    width: 100vw;
     color: var(--primero);
 }
 .footer-home{
@@ -35,33 +35,35 @@ body
     justify-content: space-evenly;
     align-items: center;
     color: var(--primero);
-    letter-spacing: 2px;
+    letter-spacing: 0.3rem;
     font-family: 'Times New Roman', Times, serif;
 }
 .allInfo{
     width: 90vw;
-    margin: 0px 50px 0px 50px ;
+    margin: 0rem 3.5rem 0rem 3.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .radio{
+    width:80%;
+    height:80%;
     border-radius: 50%;
-    border: 2px solid #b0dec3;
+    border: 0.2rem solid #b0dec3;
 }
 /* estilos barra nav */
 nav{
     width: 95%;
-    margin: 30px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     &.flotante{ 
-        border: solid 2px white;
-        border-radius: 20px;
+        border: solid 0.2rem white;
+        border-radius: 1.2rem;
         background-color: rgba(119, 54, 118, 0.8) ;
     }
 }
@@ -79,30 +81,29 @@ nav>.ul-menu{
         font-family: 'Times New Roman', Times, serif;
         text-decoration: none;
         color: var(--primero);
-        letter-spacing: 2px;
+        letter-spacing: 0.2rem;
         padding: 0.5rem;
         font-weight: 600;
     }
 }
 nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
-    background-color: var(--bordes);
-    color: var(--tercero);
-    border-radius: 8px;
-    transition: 1s;
+    box-shadow:  0 0 0.7rem var(--primero), 0 0 0.7rem var(--primero), 0 0 0.5rem var(--primero);
+    border-radius: 0.7rem;
+    transition: all 500ms;
 }
 
 /* configuración iconos dia, noche */
 .dia, .noche{
     cursor: pointer;
     filter: invert(1);
-    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
 }
 .dia:hover, .noche:hover{
     scale: 1.2;
 }
 
 .theme{
-    padding-left: 20px;
+    padding-left: 1.2rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -115,17 +116,17 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
     font-family: 'Times New Roman', Times, serif;
 }
 .formulario{
-    margin-top: 30px;
+    margin-top: 2rem;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .form{
-    width: 93%;
-    height: 80%;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,7 +134,7 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
 }
 .col{
     width: 100%;
-    height: 90px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,29 +142,29 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
 }
 .row{
     width: 100%;
-    height:30%;
+    height:6rem;
     display: flex;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0.5rem;
 }
 .textarea{
     width: 95%;
-    height:15%;
-    border-radius: 15px;
-    margin: 10px 0px 35px 0px;
+    height:4rem;
+    border-radius: 1rem;
+    margin: 0.6rem 0rem 2.1rem 0rem;
     background-color: var(--primero);
 }
 .titulos{
-    margin: 10px;
-    font-size: 20px;
+    margin: 0.6rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
     font-family: 'Times New Roman', Times, serif;
 }
 .input{
-    width: 90%;
-    height: 100%;
-    border-radius: 15px;
+    width: 95%;
+    height: 6rem;
+    border-radius: 1rem;
     text-align: center;
     background-color: var(--primero);
 }
@@ -172,19 +173,19 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
     opacity: 0.5;
 }
 .btnEnviar{
-    width: 400px;
-    height: 45px;
+    width: 30%;
+    height: 2.8rem;
     background-color: var(--primero);
-    border: 2px solid black;
-    border-radius:10px;
+    border-radius:0.7rem;
     font-size: large;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
     font-family: 'Times New Roman', Times, serif;
 }
 .btnEnviar:hover{
-    scale: 1.2;
-    transition: 1s;
+    box-shadow:  0 0 0.7rem var(--primero), 0 0 0.7rem var(--primero);
+    scale: 1.1;
+    transition: 500ms;
     color: rgb(3, 2, 3);
     font-size: large;
     font-weight: 600;
@@ -210,11 +211,12 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
     color: #0D0D0D !important;
     font-weight: 900;
     background-color:var(--primero)!important;
-    border: 2px solid var(--primero)!important;
+    border: 0.2rem solid var(--primero)!important;
     font-family: 'Times New Roman', Times, serif;
 }
 .btn:hover{
-    scale: 1.2;
-    transition: 1s;
+    box-shadow:  0 0 0.7rem var(--primero), 0 0 0.7rem var(--primero);
+    scale: 1.1;
+    transition: 500ms;
 }
 
