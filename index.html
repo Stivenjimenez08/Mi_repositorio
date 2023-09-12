@@ -42,9 +42,9 @@
   <section class="allInfo">
     <section class="perfil">
       
-      <div class="foto">
+      
         <img src="assets/foto.jpg" alt="foto de perfil" class="radio">
-      </div>
+      
         
       <div class="info">
         <p class="sobreMi"> Ingeniero Mecatrónico altamente motivado y con amplia experiencia en el diseño, desarrollo y puesta en marcha de soluciones tecnológicas innovadoras. Mi enfoque interdisciplinario me ha permitido abordar proyectos complejos que integran mecánica, electrónica y control, con un claro enfoque en la eficiencia y la optimización de procesos. Poseo habilidades técnicas sobresalientes, una mente analítica y la capacidad de resolver problemas de manera creativa.
@@ -52,10 +52,10 @@
       </div>
     </section>
   
-    <section class="educacion" id="secEducacion">
+     <section class="educacion" id="secEducacion">
         <div class="estudios" >
-          <h2 class="tituloEducacion">MIS ESTUDIOS</h2>
-          <ul>
+          <h2 class="tituloEducacion">ESTUDIOS</h2>
+          <ul class="titulosEdu">
             <li class="titulosEd">Ingeniero Mecatrónico <br>Institución universitaria EAM  
               2022  <br>Armenia, Quindío</li>
 
@@ -68,19 +68,19 @@
         </div>
 
         <div class="experiencia">
-          <h2 class="tituloExperiencia">MI EXPERIENCIA</h2>
+          <h2 class="tituloExperiencia">EXPERIENCIA</h2>
           <ul class="experiencias">
-            <li class="titulosExp">Electrónico Industrias Printex (Febrero 2022 - Mayo 2023)
+            <li class="titulosExp1">Electrónico Industrias Printex (Febrero 2022 - Mayo 2023)
               <br>Desempeño orientado al mantenimiento preventivo y correctivo de maquinaria en la industria textil, con 
               experiencia en diagnóstico y reparación de tarjetas electrónicas, de control y potencia.
             </li>
-            <li class="titulosExp">Mecatrónico en Facilisimo (Marzo 2021 - Septiembre 2021) 
+            <li>Mecatrónico en Facilisimo (Marzo 2021 - Septiembre 2021) 
               <br>Encargado de la investigación de tecnologías para el desarrollo de proyectos asignados, destacando en la 
                creación, integración e implementación tanto de software como de hardware.
             </li>
           </ul>
         </div>
-    </section>
+     </section>
 
     <section class="contHabilidades" id="habilidades">
       <div class="tituloHabilidades">
@@ -88,23 +88,23 @@
       </div>
       <section class="habilidades">
         <div class="imgHabilidades">
-          <img src="assets/c-.png" alt="" width="125px" height="125px" >
+          <img src="assets/c-.png" alt="" class="logImg" >
           <h3>Lenguaje C</h3>
         </div>
         <div class="imgHabilidades">
-          <img src="assets/dwg.png" alt="" width="125px" height="125px" >
+          <img src="assets/dwg.png" alt="" class="logImg" >
           <h3>INVENTOR/CAD</h3>
         </div>
         <div class="imgHabilidades">
-          <img src="assets/formato-de-archivo-css.png" alt="" width="125px" height="125px" >
+          <img src="assets/formato-de-archivo-css.png" alt="" class="logImg" >
           <h3>CSS</h3>
         </div>
         <div class="imgHabilidades">
-          <img src="assets/html.png" alt="" width="125px" height="125px" >
+          <img src="assets/html.png" alt="" class="logImg" >
           <h3>HTML</h3>
         </div>
         <div class="imgHabilidades">
-          <img src="assets/js.png" alt="" width="125px" height="125px" >
+          <img src="assets/js.png" alt="" class="logImg" >
           <h3>JAVASCRIPT</h3>
         </div>
         <div class="imgHabilidades">
@@ -115,10 +115,8 @@
     </section>
 
     <section class="formulario" id="contacto">
-      <div >
-          <h2 class="correo">ENVIAME UN CORREO</h2>
-      </div>
       <form method="post" name="Formulariodecontacto" class="form" action="https://formspree.io/f/mdoragbv">
+        <h2 class="correo">ENVIAME UN CORREO</h2>
           <div class="row">
               <div class="col">
                   <label class="titulos " 
@@ -144,10 +142,15 @@
   </main>
 
   <footer class="footer-home">
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" > 
-      <strong>Mis redes sociales</strong></button>
+    <div class="contFooter">
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" > 
+        <strong>Redes sociales</strong></button>
+    </div>
+      <div class="contFooter">
+        <h4><strong>Realizado en 2023</strong></h4>
+      </div>
 
-  <div class="offcanvas offcanvas-top colorOff" tabindex="-1" id="offcanvasTop" >
+  <div class="offcanvas offcanvas-top colorOff"  id="offcanvasTop" >
     <div class="offcanvas-header">
       <h5 class="offTitle" id="offcanvasTopLabel"><strong>Mis Redes Sociales</strong></h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -165,7 +168,7 @@
       <img src="assets/facebook.png" alt="Facebook" width="50px" height="50px" class="red"> Facebook</a>
     </div>
   </div>
-    <h4>Portafolio realizado en 2023</h4>
+    
   </footer>
 </body>
 <script src="app.js"></script>

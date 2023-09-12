@@ -10,86 +10,89 @@
     font-family:'Times New Roman', Times, serif;
     font-weight: 800;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
 }
 .perfil{
-    margin-top: 15px;
-    padding: 20px 0px 20px 0px;
+    margin-top: 1rem;
+    padding: 1.2rem;
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     & .info{
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-     }
-     & .sobreMi{
-        display: flex;
-        width: 100%;
+        width: 60%;
         height: 100%;
-        font-size:25px;
-        font-weight: 600;
+        display: flex;
         text-align: justify;
-        padding-right: 20px;
-       font-family: 'Times New Roman', Times, serif;
+        align-items: center;
+        font-size:1.5rem;
+        font-weight: 600;
+        padding: 1.3rem;
+        font-family: 'Times New Roman', Times, serif;
+    } 
+    & .radio{
+        width: 40%;
+        height: 50%;
+        margin: 1rem;
     }
  }
- .foto{
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-}
-
  /* Estilos pestaña educación  */   
  .educacion{
-    margin: 30px 0px 30px 0px;
+    margin: 2rem 0rem 2rem 0rem;
     width: 100%;
-    height: 60%;
+    height: 100%;
     display: flex;
     justify-content: center;
 
     & .estudios{
-        width: 45%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 20px;
+        font-size: 1.3rem;
         font-weight: 600;
         font-family:'Times New Roman', Times, serif;
     }
     & .experiencia{
-        width: 55%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 20px;
+        font-size: 1.3rem;
         font-weight: 600;
         font-family: 'Times New Roman', Times, serif;
     }
     & .tituloEducacion{
         font-family: 'Times New Roman', Times, serif;
-        margin: 50px;
-        letter-spacing: 2px;
+        margin: 3rem;
+        letter-spacing: 0.2rem;
      }
      & .tituloExperiencia{
         font-family: 'Times New Roman', Times, serif;
-        letter-spacing: 2px;
+        margin-bottom: 3.5rem;
+        letter-spacing: 0.2rem;
      }
-    & .titulosEd{
-        margin-bottom: 50px;
+    & .titulosEdu{
+        display: flex;
+        flex-direction: column;
         list-style:circle ;
+        & .titulosEd{
+            margin-bottom: 3rem;
+        }
      }
-    & .titulosExp{
-        margin: 55px;
-        list-style:circle ;
+    & .experiencias{
+        padding: 0rem 3rem;
+        display: flex;
+        flex-direction: column;
         text-align: justify;
-     }
+        list-style:circle ;
+        & .titulosExp1{
+            margin-bottom: 3rem;
+        }
+    }
  }
 
 /* Estilos pestaña habilidades */
@@ -102,8 +105,8 @@
     & .tituloHabilidades{
         font-family: 'Times New Roman', Times, serif;
         text-align: center; 
-        letter-spacing: 2px;
-        margin: 10px 0px 20px 0px;
+        letter-spacing: 0.2rem;
+        margin: 0.7rem 0rem 1.3rem 0rem;
     }
 }
 .habilidades{
@@ -111,27 +114,30 @@
     height: 100%;
     display: flex;
     flex-wrap:wrap;
-    align-items: center;
-    
+    align-items: center; 
     & .imgHabilidades{
-        margin: 0px 50px 40px 50px ;
+        margin: 0rem 3rem 2.5rem 3rem ;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     & .imgHabilidades>h3{
-        padding-top: 10px;
+        padding-top: 0.7rem;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
+        font-size: 1.3rem;
         font-weight: 600;
+    }
+    & .logImg{
+        width:8rem;
+        height:8rem;
     }
 }
 
 /* Estilos iconos redes sociales */
 .contImg{
-    margin-top: 25px;
+    margin-top: 1.5rem;
     display: flex;
     justify-content: space-evenly;
 }
