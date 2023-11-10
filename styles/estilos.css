@@ -31,12 +31,12 @@
         padding: 1.3rem;
         font-family: 'Times New Roman', Times, serif;
     } 
-    & .radio{
-        width: 30rem;
-        height: 30rem;
-        margin: 2rem;
-    }
  }
+.radio{
+    width: 30rem;
+    height: 30rem;
+    margin: 2rem;
+}
  /* Estilos pestaña educación  */   
  .educacion{
     margin: 2rem 0rem 2rem 0rem;
@@ -44,26 +44,6 @@
     display: flex;
     justify-content: center;
 
-    & .estudios{
-        width: 40rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.3rem;
-        font-weight: 600;
-        font-family:'Times New Roman', Times, serif;
-    }
-    & .experiencia{   
-        width: 37rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.3rem;
-        font-weight: 600;
-        font-family: 'Times New Roman', Times, serif;
-    }
     & .tituloEducacion{
         font-family: 'Times New Roman', Times, serif;
         margin: 3rem;
@@ -93,6 +73,26 @@
         }
     }
  }
+ .estudios{
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif;
+}
+.experiencia{   
+    width: 37rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 /* Estilos pestaña habilidades */
 .contHabilidades{
@@ -154,8 +154,8 @@
         width: 42rem;
     }
     .radio{
-        width: 10rem;
-        height: 10rem;
+        width: 25rem;
+        height: 25rem;
     }
     .educacion{
         display: flex;
@@ -165,4 +165,51 @@
     .contHabilidades{
         width: 35rem;
     }
+}
+@media screen and (max-width: 480px){
+
+    .perfil{
+        width: 25rem;
+        height: 65;
+        & .nombre{
+            margin: 1rem;
+        }
+    }
+    .info{
+        width: 25rem;
+    }
+    .radio{
+        width: 20rem;
+        height: 20rem;
+    }
+    .educacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contHabilidades{
+        width: 35rem;
+    }
+    .estudios{
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family:'Times New Roman', Times, serif;
+    }
+    .experiencia{   
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .experiencias {
+        width: 23rem;
+        padding: 0;
+    }
+    
 }
