@@ -19,11 +19,15 @@ body
 background: radial-gradient(circle, rgba(223,216,185,1) 0%, rgba(245,222,179,1) 100%); 
 }
 .header-home{
-    width: 100%;
-    height: 15%;
+    margin: 2rem;
+    width: 95%;
+    height: 6rem;
     display: flex;
     justify-content: center;
     align-items:center;
+    border: 0.2rem solid black;
+    border-radius: 1.2rem;
+    background-color: rgb(232, 198, 136);
 }
 .main-home{
     width: 100vw;
@@ -65,11 +69,6 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    &.flotante{
-        border: 0.2rem solid black;
-        border-radius: 1.2rem;
-        background-color: rgb(232, 198, 136);
-    }
 }
 nav>.ul-menu{
     width: 100%;
@@ -125,7 +124,6 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
     justify-content: center;
     align-items: center;
 }
-/*me quede aqui tanto en dia como en noche*/
 .form{
     width: 100%;
     height: 100vh;
@@ -221,4 +219,13 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
     box-shadow:  0 0 0.7rem var(--segundo), 0 0 0.7rem var(--segundo);
     scale: 1.1;
     transition: 500ms;
+}
+/* Media Queries */
+
+@media screen and (max-width: 800px){
+
+    .navbutton{
+        display: none;
+    }
+    
 }

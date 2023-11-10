@@ -10,19 +10,24 @@
 }
 .perfil, .educacion, .contHabilidades, .formulario{
     border-bottom: 0.3rem solid var(--primero);
-    width: 100%;
+    width: 30rem;
 }
 body
 {
     width: 100vw;
     background: radial-gradient(circle, rgba(123,34,121,1) 0%, rgba(25,25,55,1) 100%);
+
 }
 .header-home{
-    width: 100%;
-    height: 15%;
+    margin: 2rem;
+    width: 95%;
+    height: 6rem;
     display: flex;
     justify-content: center;
     align-items:center;
+    border: solid 0.2rem white;
+    border-radius: 1.2rem;
+    background-color: rgba(119, 54, 118, 0.8) ;
 }
 .main-home{
     width: 100vw;
@@ -65,11 +70,6 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    &.flotante{ 
-        border: solid 0.2rem white;
-        border-radius: 1.2rem;
-        background-color: rgba(119, 54, 118, 0.8) ;
-    }
 }
 nav>.ul-menu{
     width: 100%;
@@ -77,7 +77,7 @@ nav>.ul-menu{
     display: flex;
     justify-content:space-around;
     font-size: large;
-    & .navbutton{
+    &.navbutton{
         background-color: rgba(255, 255, 255, 0);
         border: 0rem;
     }
@@ -92,7 +92,7 @@ nav>.ul-menu{
 }
 nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
     box-shadow:  0 0 0.7rem var(--primero), 0 0 0.7rem var(--primero), 0 0 0.5rem var(--primero);
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
     transition: all 500ms;
 }
 
@@ -116,71 +116,58 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
 }
 
 /* estilos del formulario */
+.form{
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .correo{ 
     font-family: 'Times New Roman', Times, serif;
+    margin: 1rem;
 }
-.formulario{
-    width: 100%;
-    height: 30rem;
+.contmail{
+    width: 70rem;
+    height: 7rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.form{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    & .correo{
-        margin-bottom: 0rem;
-    }
 }
 .col{
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.row{
-    width: 100%;
-    height:7rem;
-    display: flex;
+.input{
+    width: 32rem;
+    height: 3rem;
+    border-radius: 1rem;
     text-align: center;
-    border-radius: 0.5rem;
+    background-color: var(--primero);
 }
 .textarea{
-    width: 95%;
-    height:4rem;
+    width: 67rem;
+    height: 4rem;
     border-radius: 1rem;
     margin: 0.6rem 0rem 2.1rem 0rem;
     background-color: var(--primero);
 }
 .titulos{
-    margin: 1rem;
-    font-size: 1.3rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
     font-family: 'Times New Roman', Times, serif;
 }
-.input{
-    width: 95%;
-    height: 6rem;
-    border-radius: 1rem;
-    text-align: center;
-    background-color: var(--primero);
-}
 .input::placeholder{
     color: gray;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 .btnEnviar{
-    width: 30%;
+    width: 25rem;
     height: 2.8rem;
+    margin-top: 0.5rem;
     background-color: var(--primero);
     border-radius:0.7rem;
     font-size: large;
@@ -197,6 +184,7 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
     font-weight: 600;
     cursor: pointer;
 }
+
 /* estilo offcanvas */
 .colorOff{
     background-color:rgb(73, 34, 72)!important;
@@ -215,6 +203,7 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
 }
 .btn{
     color: var(--segundo)!important;
+    width: 10rem;
     font-weight: 900;
     background-color:var(--primero)!important;
     border: 0.1rem solid var(--segundo)!important;
@@ -226,3 +215,42 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
     transition: 500ms;
 }
 
+/* Media Queries*/
+
+@media screen and (max-width: 800px){
+
+    .navbutton{
+        display: none;
+    }
+    .perfil{
+        display: flex;
+        flex-direction: column;
+    }
+    .allInfo{
+        margin: 0rem 3.5rem 0rem 2rem;
+    }
+    .header-home{
+        margin: 0.6rem;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        height: 72vh;
+    }
+    .contmail{
+        display: flex;
+        flex-direction: column; 
+        height: 7;
+        margin-bottom: 6rem;
+    }
+    .textarea{
+        width: 32rem;
+        height: 5rem;
+        border-radius: 1rem;
+        margin: 0.6rem 0rem 2.1rem 0rem;
+        background-color: var(--primero);
+    }
+    .btnEnviar{
+        width: 32rem;
+    }
+}

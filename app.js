@@ -11,10 +11,12 @@ function getId(img){
         cambioEstilo.setAttribute('href','styles/modoDia.css')
         activoNoche.style.display = "block"
         activoDia.style.display = "none"
-    }else if(modo=="mnoche" && estado==false){
+    } 
+    else if(modo=="mnoche" && estado==false){
         cambioEstilo.setAttribute('href','styles/modoNoche.css')
         activoNoche.style.display= "none"
-        activoDia.style.display= "block"}
+        activoDia.style.display= "block"
+    } 
 }
 //funcion para aviso de formulario enviado
     window.addEventListener("load", function(){

@@ -16,23 +16,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-   
   HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?                       family=Edu+SA+Beginner:wght@500&family=Open+Sans:ital,wght@1,300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Open+Sans:ital,wght@1,300&display=swap');
     </style>
 </head>
 
 <body>
 
   <header class="header-home">
-    <nav class="flotante">
+    <nav>
       <div class="theme">
         <img src="assets/soleado.png" alt="Ligth" class="dia" id="mdia" onclick="getId(this)" height="45px"width="45px">
         <img src="assets/noche.png" alt="Dark" class="noche" id="mnoche" onclick="getId(this)" height="45px"width="45px">
       </div>
       <ul class="ul-menu">
-        <button class="navbutton"><a href="#perfil">PERFIL</a></button>
-        <button class="navbutton"><a href="#secEducacion">EDUCACIÓN</a></button>
-        <button class="navbutton"><a href="#habilidades">HABILIDADES</a></button>
-        <button class="navbutton"><a href="#contacto">CONTACTAME</a></button>
+        <li class="navbutton"><a href="#perfil">PERFIL</a></li>
+        <li class="navbutton"><a href="#secEducacion">EDUCACIÓN</a></li>
+        <li class="navbutton"><a href="#habilidades">HABILIDADES</a></li>
+        <li class="navbutton"><a href="#contacto">CONTACTAME</a></li>
       </ul>
     </nav> 
   </header>
@@ -42,17 +42,28 @@
   <section class="allInfo">
     <section class="perfil">
       
-      
         <img src="assets/foto.jpg" alt="foto de perfil" class="radio">
       
-        
       <div class="info">
-        <p class="sobreMi"> Ingeniero Mecatrónico altamente motivado y con amplia experiencia en el diseño, desarrollo y puesta en marcha de soluciones tecnológicas innovadoras. Mi enfoque interdisciplinario me ha permitido abordar proyectos complejos que integran mecánica, electrónica y control, con un claro enfoque en la eficiencia y la optimización de procesos. Poseo habilidades técnicas sobresalientes, una mente analítica y la capacidad de resolver problemas de manera creativa.
+        <p> Ingeniero Mecatrónico altamente motivado y con amplia experiencia en el diseño, desarrollo y puesta en marcha de soluciones tecnológicas innovadoras. Mi enfoque interdisciplinario me ha permitido abordar proyectos complejos que integran mecánica, electrónica y control, con un claro enfoque en la eficiencia y la optimización de procesos. Poseo habilidades técnicas sobresalientes, una mente analítica y la capacidad de resolver problemas de manera creativa.
         </p>
       </div>
     </section>
   
-     <section class="educacion" id="secEducacion">
+     <section class="educacion">
+       <div class="experiencia">
+         <h2 class="tituloExperiencia">EXPERIENCIA</h2>
+         <ul class="experiencias">
+           <li class="Exp1">Electrónico Industrias Printex (Febrero 2022 - Mayo 2023)
+             <br>Desempeño orientado al mantenimiento preventivo y correctivo de maquinaria en la industria textil, con 
+             experiencia en diagnóstico y reparación de tarjetas electrónicas, de control y potencia.
+           </li>
+           <li>Mecatrónico en Facilisimo (Marzo 2021 - Septiembre 2021) 
+             <br>Encargado de la investigación de tecnologías para el desarrollo de proyectos asignados, destacando en la 
+              creación, integración e implementación tanto de software como de hardware.
+           </li>
+         </ul>
+       </div>
         <div class="estudios" >
           <h2 class="tituloEducacion">ESTUDIOS</h2>
           <ul class="titulosEdu">
@@ -67,29 +78,16 @@
           </ul>
         </div>
 
-        <div class="experiencia">
-          <h2 class="tituloExperiencia">EXPERIENCIA</h2>
-          <ul class="experiencias">
-            <li class="titulosExp1">Electrónico Industrias Printex (Febrero 2022 - Mayo 2023)
-              <br>Desempeño orientado al mantenimiento preventivo y correctivo de maquinaria en la industria textil, con 
-              experiencia en diagnóstico y reparación de tarjetas electrónicas, de control y potencia.
-            </li>
-            <li>Mecatrónico en Facilisimo (Marzo 2021 - Septiembre 2021) 
-              <br>Encargado de la investigación de tecnologías para el desarrollo de proyectos asignados, destacando en la 
-               creación, integración e implementación tanto de software como de hardware.
-            </li>
-          </ul>
-        </div>
      </section>
 
-    <section class="contHabilidades" id="habilidades">
+    <section class="contHabilidades" >
       <div class="tituloHabilidades">
         <h2 >MIS HABILIDADES</h2>
       </div>
       <section class="habilidades">
         <div class="imgHabilidades">
           <img src="assets/c-.png" alt="" class="logImg" >
-          <h3>Lenguaje C</h3>
+          <h3>C++</h3>
         </div>
         <div class="imgHabilidades">
           <img src="assets/dwg.png" alt="" class="logImg" >
@@ -114,26 +112,22 @@
       </section>
     </section>
 
-    <section class="formulario" id="contacto">
       <form method="post" name="Formulariodecontacto" class="form" action="https://formspree.io/f/mdoragbv">
         <h2 class="correo">ENVIAME UN CORREO</h2>
-          <div class="row">
-              <div class="col">
-                  <label class="titulos " 
-                   for="nombre">Nombre</label>
-                  <input class="input" id="nombre" type="text" name="nombre" 
-                  placeholder="Nombre y Apellidos" >
-              </div>
-              <div class="col">
-                  <label class="titulos" for="email">Email</label>
-                  <input class="input" id="email" type="email" name="email" 
-                  placeholder="Email">
-              </div>
+        <div class="contmail">
+          <div class="col">
+            <label class="titulos " for="nombre">Nombre</label>
+            <input class="input" id="nombre" type="text" name="nombre" placeholder = "Nombre y Apellidos" >
           </div>
+          <div class="col">
+            <label class="titulos" for="email">Email</label>
+            <input class="input" id="email" type="email" name="email" placeholder = "Email">
+          </div>
+        </div>
   
-          <label class="titulos" for="servicio">¿Qué servicio necesitas? </label>
-          <textarea class="textarea" name="servicio" id="servicio" type="text" cols="30" rows="2" maxlength="244">     
-          </textarea>
+        <label class="titulos" for="servicio">¿Qué servicio necesitas? </label>
+        <textarea class="textarea" name="servicio" id="servicio" type="text" cols="30" rows="2" maxlength="244">     
+        </textarea>
 
               <input class="btnEnviar" type="submit" name="submit" value="Enviar" id="btnform"> 
       </form>

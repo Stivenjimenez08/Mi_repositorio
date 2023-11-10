@@ -7,6 +7,7 @@
 
 /* Estilos pestaña perfil */
 .nombre{
+    margin-top: 2rem;
     font-family:'Times New Roman', Times, serif;
     font-weight: 800;
     text-align: center;
@@ -21,7 +22,6 @@
     justify-content: space-around;
     align-items: center;
     & .info{
-        width: 60%;
         height: 100%;
         display: flex;
         text-align: justify;
@@ -32,21 +32,20 @@
         font-family: 'Times New Roman', Times, serif;
     } 
     & .radio{
-        width: 40%;
-        height: 50%;
-        margin: 1rem;
+        width: 30rem;
+        height: 30rem;
+        margin: 2rem;
     }
  }
  /* Estilos pestaña educación  */   
  .educacion{
     margin: 2rem 0rem 2rem 0rem;
-    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
 
     & .estudios{
-        width: 50%;
+        width: 40rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -55,8 +54,8 @@
         font-weight: 600;
         font-family:'Times New Roman', Times, serif;
     }
-    & .experiencia{
-        width: 50%;
+    & .experiencia{   
+        width: 37rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -84,12 +83,12 @@
         }
      }
     & .experiencias{
-        padding: 0rem 3rem;
+        padding-bottom: 1rem;
         display: flex;
         flex-direction: column;
         text-align: justify;
         list-style:circle ;
-        & .titulosExp1{
+        & .Exp1{
             margin-bottom: 3rem;
         }
     }
@@ -106,7 +105,7 @@
         font-family: 'Times New Roman', Times, serif;
         text-align: center; 
         letter-spacing: 0.2rem;
-        margin: 0.7rem 0rem 1.3rem 0rem;
+        padding: 1.5rem 0rem;
     }
 }
 .habilidades{
@@ -115,6 +114,7 @@
     display: flex;
     flex-wrap:wrap;
     align-items: center; 
+    justify-content: center;
     & .imgHabilidades{
         margin: 0rem 3rem 2.5rem 3rem ;
         display: flex;
@@ -142,3 +142,26 @@
     justify-content: space-evenly;
 }
 
+/* Media Queries*/
+
+@media screen and (max-width: 800px){
+
+    .perfil{
+        width: 48rem;
+    }
+    .info{
+        width: 45rem;
+    }
+    .radio{
+        width: 10rem;
+        height: 10rem;
+    }
+    .educacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contHabilidades{
+        width: 35rem;
+    }
+}
