@@ -8,9 +8,12 @@
     margin: 0rem;
     padding: 0rem;
 }
-.perfil, .educacion, .contHabilidades, .formulario{
+.perfil, .educacion, .form{
     border-bottom: 0.3rem solid var(--primero);
-    width: 30rem;
+    width: 90vw;
+}
+.form{
+    border-top: 0.3rem solid var(--primero);
 }
 body
 {
@@ -27,7 +30,7 @@ body
     align-items:center;
     border: solid 0.2rem white;
     border-radius: 1.2rem;
-    background-color: rgba(119, 54, 118, 0.8) ;
+    background-color: rgba(81, 13, 108, 0.983) ;
 }
 .main-home{
     width: 100vw;
@@ -78,7 +81,6 @@ nav>.ul-menu{
     justify-content:space-around;
     font-size: large;
     &.navbutton{
-        background-color: rgba(255, 255, 255, 0);
         border: 0rem;
     }
     & .navbutton> a{
@@ -117,7 +119,7 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
 
 /* estilos del formulario */
 .form{
-    width: 80vw;
+    width: 90vw;
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -127,6 +129,7 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
 .correo{ 
     font-family: 'Times New Roman', Times, serif;
     margin: 1rem;
+    letter-spacing: 0.2rem;
 }
 .contmail{
     width: 70rem;
@@ -167,7 +170,7 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
 .btnEnviar{
     width: 25rem;
     height: 2.8rem;
-    margin-top: 0.5rem;
+    margin-bottom: 1rem;
     background-color: var(--primero);
     border-radius:0.7rem;
     font-size: large;
@@ -187,7 +190,7 @@ nav>.ul-menu>.navbutton>a:hover, nav>.ul-menu>.navbutton>a:focus{
 
 /* estilo offcanvas */
 .colorOff{
-    background-color:rgb(73, 34, 72)!important;
+    background-color:rgb(82, 23, 107)!important;
 }
 .offTitle{
     color:var(--primero) ;

@@ -16,13 +16,13 @@
 .perfil{
     margin-top: 1rem;
     padding: 1.2rem;
-    width: 100%;
-    height: 100%;
+    width: 90vw;
+    height: 80vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     & .info{
-        height: 100%;
+        height: 70vh;
         display: flex;
         text-align: justify;
         align-items: center;
@@ -147,10 +147,11 @@
 @media screen and (max-width: 800px){
 
     .perfil{
-        width: 48rem;
+        width: 44rem;
+        height: 60rem;
     }
     .info{
-        width: 45rem;
+        width: 42rem;
     }
     .radio{
         width: 10rem;
